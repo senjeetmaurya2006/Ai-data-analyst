@@ -1,0 +1,44 @@
+{
+  "insights": [
+    {
+      "title": "Discount-Driven Revenue Erosion",
+      "category": "Pricing Strategy",
+      "raw_finding": "Correlation between sales and discount is 0.5976, while profit and discount correlation is -0.5765.",
+      "business_insight": "Promotional activities are successfully driving top-line volume, but at a significant cost to the bottom line. The 11.00% average discount rate is inversely related to profitability, suggesting that current discounting tiers are crossing the threshold of marginal utility and eroding the net profit margin to 8.14%.",
+      "impact_level": "High",
+      "confidence_score": 0.92
+    },
+    {
+      "title": "Critical Revenue and Profit Contraction",
+      "category": "Financial Performance",
+      "raw_finding": "Overall sales growth is -76.55% and profit growth is -52.65% over the analyzed period.",
+      "business_insight": "The business is facing a severe contraction. Although profit is declining less sharply than sales (slope of -6.49 vs -19.36), the 76.55% drop in revenue indicates a potential loss of market share or a failing product-market fit that requires immediate strategic pivot.",
+      "impact_level": "Critical",
+      "confidence_score": 0.95
+    },
+    {
+      "title": "Inefficient Revenue Scaling",
+      "category": "Operational Efficiency",
+      "raw_finding": "The correlation between sales and profit is -0.0594, with a max sales value of 1,910.00 vs a max profit of 179.50.",
+      "business_insight": "There is a near-zero correlation between transaction size and profitability, indicating that larger orders do not benefit from economies of scale. With an Average Order Value (AOV) of 641.50 but a Profit per Order of only 52.20, the business is likely over-investing in high-value, low-margin SKUs.",
+      "impact_level": "High",
+      "confidence_score": 0.88
+    },
+    {
+      "title": "Loss-Making Transaction Risk",
+      "category": "Risk Management",
+      "raw_finding": "Profit range spans from -72.50 to 179.50, with a mean of 52.20.",
+      "business_insight": "The presence of significant negative outliers (min profit -72.50) suggests that certain transactions are being subsidized by the rest of the portfolio. Implementing a 'minimum margin' guardrail is essential, as the current 11.00% average discount is failing to prevent value-destructive sales.",
+      "impact_level": "Medium",
+      "confidence_score": 0.9
+    },
+    {
+      "title": "Category and Regional Concentration",
+      "category": "Market Segmentation",
+      "raw_finding": "Technology represents 50% of order volume; West and North regions combined represent 60% of order volume.",
+      "business_insight": "The business has a high dependency on the Technology category and the West/North regions. While Technology drives volume, the overall 8.14% margin suggests that the portfolio needs diversification into higher-margin Office Supplies or Furniture segments to mitigate regional economic risks.",
+      "impact_level": "Medium",
+      "confidence_score": 0.85
+    }
+  ]
+}

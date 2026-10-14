@@ -1,0 +1,7 @@
+{
+  "sql_query": "SELECT \"product_name\", SUM(\"sales\") AS \"total_sales\", SUM(\"profit\") AS \"total_profit\" FROM dataset GROUP BY \"product_name\" ORDER BY \"total_sales\" DESC LIMIT 10;",
+  "chart_type": "bar",
+  "x_column": "product_name",
+  "y_column": "total_sales",
+  "explanation": "This query identifies the top 10 products based on their total sales value. It aggregates both sales and profit for each product name, allowing for a comparison of which items generate the most revenue. The results are sorted in descending order to highlight the highest-performing products."
+}

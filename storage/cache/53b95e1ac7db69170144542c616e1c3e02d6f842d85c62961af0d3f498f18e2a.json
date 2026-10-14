@@ -1,0 +1,52 @@
+{
+  "recommendations": [
+    {
+      "tier": "Strategic",
+      "title": "Margin-First Growth Pivot",
+      "action": "Shift corporate incentive structures from gross sales volume to net profit margin targets to counteract the -76.55% revenue contraction with quality earnings.",
+      "target_area": "Corporate Strategy",
+      "expected_impact": "12% to 18% increase in Net Profit Margin Percentage within 12 months.",
+      "priority": 1
+    },
+    {
+      "tier": "Tactical",
+      "title": "Dynamic Discounting Guardrails",
+      "action": "Implement a tiered discount approval matrix that caps automated discounts at 5% for any SKU with a historical margin below 10%.",
+      "target_area": "Pricing Strategy",
+      "expected_impact": "20% to 30% reduction in profit erosion caused by promotional activities.",
+      "priority": 1
+    },
+    {
+      "tier": "Immediate",
+      "title": "Loss-Making Transaction Audit",
+      "action": "Identify and flag all transactions with negative profit (down to -72.50) for immediate manual review and root cause analysis of pricing errors.",
+      "target_area": "Risk Management",
+      "expected_impact": "5% to 8% immediate lift in Average Profit per Order by eliminating value-destructive sales.",
+      "priority": 1
+    },
+    {
+      "tier": "Strategic",
+      "title": "Portfolio Diversification Program",
+      "action": "Reduce dependency on the Technology category (50% volume) by expanding the Office Supplies and Furniture segments through targeted marketing in the West and North regions.",
+      "target_area": "Market Segmentation",
+      "expected_impact": "15% reduction in regional economic risk and improved portfolio-wide margin stability.",
+      "priority": 2
+    },
+    {
+      "tier": "Tactical",
+      "title": "SKU Rationalization and Repricing",
+      "action": "Conduct a profitability audit on high-value SKUs (AOV 641.50) to identify items with near-zero profit correlation and adjust list prices or discontinue low-performers.",
+      "target_area": "Inventory Management",
+      "expected_impact": "10% to 15% improvement in operational efficiency and capital allocation.",
+      "priority": 2
+    },
+    {
+      "tier": "Immediate",
+      "title": "Customer Segment Profitability Review",
+      "action": "Analyze the 'Consumer' vs 'Corporate' segments to identify which group is driving the 11% average discount and adjust loyalty program terms accordingly.",
+      "target_area": "Marketing",
+      "expected_impact": "Immediate identification of high-cost customer segments to optimize marketing spend.",
+      "priority": 3
+    }
+  ]
+}

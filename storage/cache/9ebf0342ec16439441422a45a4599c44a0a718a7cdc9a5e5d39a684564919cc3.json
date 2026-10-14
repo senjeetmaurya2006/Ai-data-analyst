@@ -1,0 +1,89 @@
+{
+  "domain": "Retail Sales and Operations",
+  "dataset_purpose": "The dataset is designed to track and analyze sales transactions, profitability, and market performance across various product categories, regions, and customer segments.",
+  "business_objectives": [
+    "Maximize overall profitability by identifying high-margin product categories and segments.",
+    "Optimize discount strategies to ensure promotional activities do not erode net profit margins.",
+    "Analyze regional sales performance to identify growth opportunities and optimize supply chain allocation.",
+    "Evaluate product-level performance to inform inventory management and procurement decisions.",
+    "Segment customers to tailor marketing strategies and improve customer lifetime value."
+  ],
+  "candidate_kpis": [
+    "Total Gross Sales",
+    "Net Profit Margin Percentage",
+    "Average Discount Rate",
+    "Sales Volume by Region",
+    "Profitability by Customer Segment",
+    "Top Performing Products by Revenue"
+  ],
+  "primary_time_column": "order_date",
+  "primary_entity_columns": [
+    "order_id",
+    "product_name"
+  ],
+  "data_dictionary": [
+    {
+      "column_name": "order_id",
+      "data_type": "Int64",
+      "description": "Unique identifier for each customer order.",
+      "business_meaning": "The primary transaction reference number used to track orders and group multiple line items within a single purchase.",
+      "usage": "Used as a primary key for joining with shipping or returns data and for counting total transaction volume."
+    },
+    {
+      "column_name": "order_date",
+      "data_type": "Date",
+      "description": "The calendar date when the transaction occurred.",
+      "business_meaning": "The temporal marker for the sale, used to determine fiscal periods, seasonality, and growth trends.",
+      "usage": "Primary dimension for time-series analysis, trend forecasting, and period-over-period comparisons."
+    },
+    {
+      "column_name": "region",
+      "data_type": "String",
+      "description": "The geographical territory where the sale was made.",
+      "business_meaning": "The administrative or market area (e.g., North, West) responsible for the revenue generation.",
+      "usage": "Used for geographic segmentation and regional performance benchmarking."
+    },
+    {
+      "column_name": "category",
+      "data_type": "String",
+      "description": "The high-level classification of the product.",
+      "business_meaning": "Broad product groupings such as Technology or Furniture used for strategic portfolio management.",
+      "usage": "Used to aggregate sales and profit metrics at a macro level for executive reporting."
+    },
+    {
+      "column_name": "product_name",
+      "data_type": "String",
+      "description": "The specific name or model of the item sold.",
+      "business_meaning": "The granular product entity that the customer purchased.",
+      "usage": "Used for SKU-level performance analysis and identifying best-selling items."
+    },
+    {
+      "column_name": "sales",
+      "data_type": "Float64",
+      "description": "The gross monetary value of the transaction.",
+      "business_meaning": "Total revenue generated from the sale before expenses are deducted.",
+      "usage": "The primary measure of business scale and top-line growth."
+    },
+    {
+      "column_name": "profit",
+      "data_type": "Float64",
+      "description": "The net financial gain or loss from the transaction.",
+      "business_meaning": "The amount remaining after the cost of goods sold (COGS) and other expenses are subtracted from sales.",
+      "usage": "The critical metric for assessing business viability and bottom-line health."
+    },
+    {
+      "column_name": "discount",
+      "data_type": "Float64",
+      "description": "The reduction applied to the list price of the product.",
+      "business_meaning": "The promotional incentive offered to the customer, expressed as a decimal or percentage.",
+      "usage": "Used to analyze the impact of pricing strategies on sales volume and profit erosion."
+    },
+    {
+      "column_name": "customer_segment",
+      "data_type": "String",
+      "description": "The classification of the customer type.",
+      "business_meaning": "The market segment the buyer belongs to, such as Corporate, Consumer, or Home Office.",
+      "usage": "Used for targeted marketing, CRM analysis, and understanding different buyer behaviors."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "operations": [
+    {
+      "column": null,
+      "issue": "2 duplicate rows detected",
+      "action": "remove_duplicates",
+      "rationale": "Removing duplicate records ensures data integrity and prevents the inflation of sales and profit metrics."
+    },
+    {
+      "column": "sales",
+      "issue": "1 missing value (9.09%)",
+      "action": "median_imputation",
+      "rationale": "Median imputation is chosen over mean because the sales distribution is highly skewed (1.48), making the median a more robust measure of central tendency."
+    },
+    {
+      "column": "sales",
+      "issue": "1 outlier exceeding IQR upper bound",
+      "action": "cap_outliers_iqr",
+      "rationale": "Capping outliers using the IQR method minimizes the influence of extreme sales values on aggregate statistics without losing the data points entirely."
+    },
+    {
+      "column": "profit",
+      "issue": "3 outliers detected outside IQR bounds",
+      "action": "cap_outliers_iqr",
+      "rationale": "Profit data contains extreme values on both ends; capping ensures that profitability analysis is not skewed by anomalous transactions."
+    },
+    {
+      "column": "discount",
+      "issue": "2 outliers detected outside IQR bounds",
+      "action": "cap_outliers_iqr",
+      "rationale": "Restricting discount values to the IQR range prevents extreme promotional values from disproportionately affecting margin calculations."
+    },
+    {
+      "column": "order_date",
+      "issue": "Ensure consistent datetime format",
+      "action": "cast_to_datetime",
+      "rationale": "Explicitly casting to datetime ensures the column is correctly typed for time-series analysis and date-based filtering."
+    },
+    {
+      "column": "region",
+      "issue": "Potential inconsistent casing or whitespace in categorical data",
+      "action": "standardize_text",
+      "rationale": "Standardizing text ensures that 'North' and 'north' are treated as the same category, improving the accuracy of regional reporting."
+    },
+    {
+      "column": "category",
+      "issue": "Potential inconsistent casing or whitespace in categorical data",
+      "action": "standardize_text",
+      "rationale": "Ensures consistent grouping for product category analysis by removing variations in string formatting."
+    },
+    {
+      "column": "customer_segment",
+      "issue": "Potential inconsistent casing or whitespace in categorical data",
+      "action": "standardize_text",
+      "rationale": "Standardization ensures that customer segments are correctly aggregated for marketing and behavioral analysis."
+    }
+  ]
+}

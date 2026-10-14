@@ -1,0 +1,12 @@
+order_id,order_date,region,category,product_name,sales,profit,discount,customer_segment
+1001,2026-01-05,North,Technology,Laptop Pro 15,1450.0,320.0,0.05,Corporate
+1002,2026-01-07,West,Furniture,Ergonomic Chair,380.0,65.0,0.10,Consumer
+1002,2026-01-07,West,Furniture,Ergonomic Chair,380.0,65.0,0.10,Consumer
+1003,2026-01-12,South,Office Supplies,Paper Bundle,85.0,22.0,0.00,Home Office
+1004,2026-01-15,East,Technology,Wireless Monitor,620.0,-45.0,0.35,Consumer
+1005,2026-01-19,North,Technology,Mechanical Keyboard,,48.0,0.05,Corporate
+1006,2026-01-22,West,Furniture,Standing Desk,890.0,140.0,0.15,Corporate
+1007,2026-01-25,South,Technology,USB-C Dock,210.0,55.0,0.00,Consumer
+1008,2026-02-02,East,Furniture,Conference Table,2400.0,-180.0,0.40,Corporate
+1009,2026-02-08,North,Office Supplies,Printer Ink Pack,150.0,45.0,0.05,Home Office
+1010,2026-02-14,West,Technology,Noise Cancelling Headphones,340.0,85.0,0.10,Consumer

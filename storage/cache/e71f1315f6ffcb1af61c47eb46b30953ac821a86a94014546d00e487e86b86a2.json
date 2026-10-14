@@ -1,0 +1,23 @@
+{
+  "row1_kpis": [
+    "Total Gross Sales",
+    "Total Net Profit",
+    "Net Profit Margin Percentage",
+    "Average Discount Rate",
+    "Total Order Volume",
+    "Average Order Value (AOV)",
+    "Profit per Order",
+    "Unique Product Count"
+  ],
+  "row2_primary_charts": [
+    "Total Sales Trend by Order Date",
+    "Profitability by Category and Customer Segment",
+    "Sales Performance by Region"
+  ],
+  "row3_secondary_charts": [
+    "Impact of Discounts on Net Profit",
+    "Sales Composition by Product and Category",
+    "Correlation Between Sales and Profit",
+    "Distribution of Order Profitability"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "root_causes": [
+    {
+      "phenomenon": "Profit Margin Erosion and Bottom-Line Volatility",
+      "primary_driver": "Aggressive and Inefficient Discounting Strategy",
+      "dimension_analyzed": "Discount vs Profitability",
+      "supporting_evidence": "Strong negative correlation (-0.5765) between profit and discount, coupled with a positive correlation (0.5976) between sales and discount, indicating volume is bought at the expense of margin.",
+      "impact_weight_pct": 45.0,
+      "rank": 1
+    },
+    {
+      "phenomenon": "Severe Top-Line Revenue Contraction",
+      "primary_driver": "Market Share Loss or Product-Market Fit Failure",
+      "dimension_analyzed": "Temporal Sales Trends",
+      "supporting_evidence": "Overall sales growth of -76.55% over the analyzed period with a steep negative slope of -19.36.",
+      "impact_weight_pct": 30.0,
+      "rank": 2
+    },
+    {
+      "phenomenon": "Diseconomies of Scale in Transaction Processing",
+      "primary_driver": "Over-investment in High-Value Low-Margin SKUs",
+      "dimension_analyzed": "Sales vs Profit Correlation",
+      "supporting_evidence": "Near-zero correlation (-0.0594) between sales and profit; high Average Order Value (641.50) yields disproportionately low Profit per Order (52.20).",
+      "impact_weight_pct": 15.0,
+      "rank": 3
+    },
+    {
+      "phenomenon": "Value-Destructive Transaction Outliers",
+      "primary_driver": "Absence of Minimum Margin Guardrails",
+      "dimension_analyzed": "Profit Distribution",
+      "supporting_evidence": "Significant negative profit outliers reaching -72.50, indicating that loss-making sales are actively subsidizing the portfolio.",
+      "impact_weight_pct": 10.0,
+      "rank": 4
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "charts": [
+    {
+      "chart_id": "sales_trend_over_time",
+      "title": "Total Sales Trend by Order Date",
+      "chart_type": "line",
+      "x_column": "order_date",
+      "y_column": "sales",
+      "color_column": null,
+      "aggregation": "sum",
+      "rationale": "Tracking sales over time is essential to identify growth patterns and evaluate the overall health of the business as per the trend analysis."
+    },
+    {
+      "chart_id": "profit_by_category_segment",
+      "title": "Profitability by Category and Customer Segment",
+      "chart_type": "bar",
+      "x_column": "category",
+      "y_column": "profit",
+      "color_column": "customer_segment",
+      "aggregation": "sum",
+      "rationale": "This chart identifies high-margin product categories and customer segments, directly supporting the objective to maximize overall profitability."
+    },
+    {
+      "chart_id": "discount_vs_profit_relationship",
+      "title": "Impact of Discounts on Net Profit",
+      "chart_type": "scatter",
+      "x_column": "discount",
+      "y_column": "profit",
+      "color_column": "category",
+      "aggregation": null,
+      "rationale": "Visualizing the relationship between discounts and profit helps optimize promotional strategies to ensure they do not erode net profit margins."
+    },
+    {
+      "chart_id": "regional_sales_performance",
+      "title": "Sales Performance by Region",
+      "chart_type": "bar",
+      "x_column": "region",
+      "y_column": "sales",
+      "color_column": null,
+      "aggregation": "sum",
+      "rationale": "Comparing sales across regions identifies growth opportunities and informs supply chain and inventory allocation decisions."
+    },
+    {
+      "chart_id": "product_sales_composition",
+      "title": "Sales Composition by Product and Category",
+      "chart_type": "treemap",
+      "x_column": "category",
+      "y_column": "sales",
+      "color_column": "product_name",
+      "aggregation": "sum",
+      "rationale": "A treemap provides a clear view of how individual products contribute to category sales, aiding in inventory management and procurement decisions."
+    },
+    {
+      "chart_id": "sales_profit_correlation",
+      "title": "Correlation Between Sales and Profit",
+      "chart_type": "heatmap",
+      "x_column": "sales",
+      "y_column": "profit",
+      "color_column": null,
+      "aggregation": null,
+      "rationale": "A heatmap of financial metrics reveals the strength of the relationship between sales volume and profitability, highlighting potential inefficiencies."
+    },
+    {
+      "chart_id": "profit_distribution",
+      "title": "Distribution of Order Profitability",
+      "chart_type": "histogram",
+      "x_column": "profit",
+      "y_column": null,
+      "color_column": null,
+      "aggregation": null,
+      "rationale": "Analyzing the distribution of profit helps identify the frequency of loss-making versus high-profit orders, providing insight into operational risks."
+    }
+  ]
+}

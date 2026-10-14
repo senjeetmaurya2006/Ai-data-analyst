@@ -1,0 +1,76 @@
+{
+  "kpis": [
+    {
+      "name": "Total Gross Sales",
+      "category": "Revenue",
+      "description": "The total monetary value of all sales transactions recorded in the dataset.",
+      "sql_query": "SELECT SUM(\"sales\") FROM dataset",
+      "unit": "Currency",
+      "value": null,
+      "formatted_value": null
+    },
+    {
+      "name": "Total Net Profit",
+      "category": "Profit",
+      "description": "The total financial gain remaining after all costs are subtracted from gross sales.",
+      "sql_query": "SELECT SUM(\"profit\") FROM dataset",
+      "unit": "Currency",
+      "value": null,
+      "formatted_value": null
+    },
+    {
+      "name": "Net Profit Margin Percentage",
+      "category": "Profit",
+      "description": "The ratio of total profit to total sales, expressed as a percentage to measure overall efficiency.",
+      "sql_query": "SELECT (SUM(\"profit\") / NULLIF(SUM(\"sales\"), 0)) * 100 FROM dataset",
+      "unit": "%",
+      "value": null,
+      "formatted_value": null
+    },
+    {
+      "name": "Average Discount Rate",
+      "category": "Cost",
+      "description": "The mean discount applied across all transactions, used to monitor the impact of promotional pricing.",
+      "sql_query": "SELECT AVG(\"discount\") * 100 FROM dataset",
+      "unit": "%",
+      "value": null,
+      "formatted_value": null
+    },
+    {
+      "name": "Total Order Volume",
+      "category": "Order",
+      "description": "The count of unique order identifiers, representing the total number of customer transactions.",
+      "sql_query": "SELECT COUNT(DISTINCT \"order_id\") FROM dataset",
+      "unit": "Orders",
+      "value": null,
+      "formatted_value": null
+    },
+    {
+      "name": "Average Order Value (AOV)",
+      "category": "Order",
+      "description": "The average revenue generated per unique order, indicating customer spending behavior.",
+      "sql_query": "SELECT SUM(\"sales\") / NULLIF(COUNT(DISTINCT \"order_id\"), 0) FROM dataset",
+      "unit": "Currency",
+      "value": null,
+      "formatted_value": null
+    },
+    {
+      "name": "Profit per Order",
+      "category": "Profit",
+      "description": "The average net profit generated for every unique order processed.",
+      "sql_query": "SELECT SUM(\"profit\") / NULLIF(COUNT(DISTINCT \"order_id\"), 0) FROM dataset",
+      "unit": "Currency",
+      "value": null,
+      "formatted_value": null
+    },
+    {
+      "name": "Unique Product Count",
+      "category": "Order",
+      "description": "The total number of distinct products sold, reflecting the breadth of the active inventory.",
+      "sql_query": "SELECT COUNT(DISTINCT \"product_name\") FROM dataset",
+      "unit": "Products",
+      "value": null,
+      "formatted_value": null
+    }
+  ]
+}
